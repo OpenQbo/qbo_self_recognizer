@@ -1,0 +1,2 @@
+---
+bool recognized #If true, the Qbo recognizes itself. If false, he didn't recognize itself
