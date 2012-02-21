@@ -5,7 +5,7 @@
 
   </description>
   <author>Arturo Bajuelos</author>
-  <license>BSD</license>
+  <license>GPLv2, LGPLv2.1</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/qbo_self_recognizer</url>
   <depend package="roscpp"/>
