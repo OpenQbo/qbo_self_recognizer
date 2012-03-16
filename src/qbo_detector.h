@@ -43,7 +43,7 @@
 #include <sensor_msgs/image_encodings.h>
 #include <sensor_msgs/SetCameraInfo.h>
 #include <image_transport/image_transport.h>
-#include <qbo_arduqbo/Nariz.h>
+#include <qbo_arduqbo/Nose.h>
 #include <qbo_self_recognizer/QboRecognize.h>
 
 

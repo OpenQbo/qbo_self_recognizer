@@ -143,7 +143,7 @@ void QboDetector::imageCallback(const sensor_msgs::Image::ConstPtr& image_ptr)
 					/*
 					 * Turn off nose
 					 */
-					qbo_arduqbo::Nariz nose;
+					qbo_arduqbo::Nose nose;
 					nose.header.stamp = ros::Time::now();
 			
 					nose.color=0;
@@ -210,7 +210,7 @@ void QboDetector::imageCallback(const sensor_msgs::Image::ConstPtr& image_ptr)
 					/*
 					 * Turn off nose
 					 */
-					qbo_arduqbo::Nariz nose;
+					qbo_arduqbo::Nose nose;
 					nose.header.stamp = ros::Time::now();
 
 					nose.color=2;
@@ -308,7 +308,7 @@ void QboDetector::imageCallback(const sensor_msgs::Image::ConstPtr& image_ptr)
 				/*
 				 * Change nose color according to the first word
 				 */
-				qbo_arduqbo::Nariz nose;
+				qbo_arduqbo::Nose nose;
 				nose.header.stamp = ros::Time::now();
 
 				if(codeword_[current_word_idx_])
@@ -390,7 +390,7 @@ void QboDetector::imageCallback(const sensor_msgs::Image::ConstPtr& image_ptr)
 				/*
 				 * Change nose color according to the next codeword
 				 */
-				qbo_arduqbo::Nariz nose;
+				qbo_arduqbo::Nose nose;
 				nose.header.stamp = ros::Time::now();
 
 				if(codeword_[current_word_idx_])
@@ -479,7 +479,7 @@ bool QboDetector::recognizeQboService(qbo_self_recognizer::QboRecognize::Request
      * Publishers
      */
 	//Publisher of the nose color
-	nose_color_pub_ = private_nh_.advertise<qbo_arduqbo::Nariz>("/cmd_nariz", 4);
+	nose_color_pub_ = private_nh_.advertise<qbo_arduqbo::Nose>("/cmd_nose", 4);
 
 
 
